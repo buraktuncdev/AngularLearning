@@ -7,6 +7,7 @@ import { NewCmpComponent } from './new-cmp/new-cmp.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
+import { EventbindingComponent } from './eventbinding/eventbinding.component';
 
 // @ts-ignore
 // @ts-ignore
@@ -16,7 +17,8 @@ import { WarningAlertComponent } from './warning-alert/warning-alert.component';
     NewCmpComponent,
     ServerComponent,
     ServersComponent,
-    WarningAlertComponent
+    WarningAlertComponent,
+    EventbindingComponent
   ],
   imports: [
     BrowserModule,

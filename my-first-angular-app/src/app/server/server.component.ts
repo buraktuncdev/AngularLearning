@@ -10,6 +10,8 @@ export class ServerComponent implements OnInit{
   serverId = 10;
   serverStatus = 'offline';
 
+  serverCreationStatus = 'No server was created'
+
   allowNewServer = false;
 
 
@@ -20,6 +22,10 @@ export class ServerComponent implements OnInit{
     setTimeout(()=> {
       this.allowNewServer = true;
     },2000)
+  }
+
+  onCreateServer(){
+  this.serverCreationStatus = 'Server was created'
   }
 
   ngOnInit(): void {
