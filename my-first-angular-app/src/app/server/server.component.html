@@ -1,7 +1,15 @@
+<p>{{serverCreationStatus}}</p>
 
-<button class="btn btn-primary" [disabled]="allowNewServer">Add Server</button>
+
+
+
+
+<button class="btn btn-primary" [disabled]="allowNewServer" (click)="onCreateServer()">Add Server</button>
+
+<p [innerText]="allowNewServer"></p>
 
 <p>Server Component Works!</p>
 <p>{{servercomponentVariable}}</p>
 
 <h1>Server with ID {{serverId}} is {{getServerStatus()}}</h1>
+
