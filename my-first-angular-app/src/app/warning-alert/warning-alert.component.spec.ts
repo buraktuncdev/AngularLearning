@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NewCmpComponent } from './new-cmp.component';
+import { WarningAlertComponent } from './warning-alert.component';
 
-describe('NewCmpComponent', () => {
-  let component: NewCmpComponent;
-  let fixture: ComponentFixture<NewCmpComponent>;
+describe('WarningAlertComponent', () => {
+  let component: WarningAlertComponent;
+  let fixture: ComponentFixture<WarningAlertComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NewCmpComponent ]
+      declarations: [ WarningAlertComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NewCmpComponent);
+    fixture = TestBed.createComponent(WarningAlertComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
