@@ -8,6 +8,8 @@ import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { EventbindingComponent } from './eventbinding/eventbinding.component';
+import { FormsModule } from '@angular/forms';
+import { Assignment1Component } from './assignment1/assignment1.component';
 
 // @ts-ignore
 // @ts-ignore
@@ -18,11 +20,13 @@ import { EventbindingComponent } from './eventbinding/eventbinding.component';
     ServerComponent,
     ServersComponent,
     WarningAlertComponent,
-    EventbindingComponent
+    EventbindingComponent,
+    Assignment1Component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
