@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-first-angular-app": {
+    "ShopApp": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-first-angular-app",
+            "outputPath": "dist/ShopApp",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "my-first-angular-app:build"
+            "browserTarget": "ShopApp:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "my-first-angular-app:build:production"
+              "browserTarget": "ShopApp:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-first-angular-app:build"
+            "browserTarget": "ShopApp:build"
           }
         },
         "test": {
@@ -88,7 +88,6 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -111,19 +110,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "my-first-angular-app:serve"
+            "devServerTarget": "ShopApp:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "my-first-angular-app:serve:production"
+              "devServerTarget": "ShopApp:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "my-first-angular-app",
+  "defaultProject": "ShopApp",
   "cli": {
-    "analytics": "ab860d88-b1c8-4e4a-a937-8484d3400b65"
+    "analytics": "5459df88-7551-4030-9f41-6847a0cd5cef"
   }
 }
